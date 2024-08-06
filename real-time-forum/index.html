@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="messages-link">Messages</a>
+            <a href="#" id="logout-link">Logout</a>
+        </nav>
+
+        <!-- Registration Form -->
+        <div id="registration-form" class="form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-nickname">Nickname or Email:</label>
+                <input type="text" id="login-nickname" name="login-nickname" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Posts Feed -->
+        <div id="posts-feed" class="content-container">
+            <h2>Posts</h2>
+            <div id="posts-list"></div>
+        </div>
+
+        <!-- Post Details -->
+        <div id="post-details" class="content-container">
+            <h2>Post Details</h2>
+            <div id="post-content"></div>
+            <div id="comments-section">
+                <h3>Comments</h3>
+                <div id="comments-list"></div>
+                <form id="comment-form">
+                    <label for="comment-content">Add a Comment:</label>
+                    <textarea id="comment-content" name="comment-content" required></textarea>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Private Messages -->
+        <div id="messages" class="content-container">
+            <h2>Private Messages</h2>
+            <div id="online-users">
+                <h3>Online Users</h3>
+                <ul id="online-users-list"></ul>
+            </div>
+            <div id="chat-container">
+                <div id="chat-header">
+                    <h3>Chat with: <span id="chat-user-name"></span></h3>
+                </div>
+                <div id="chat">
+                    <!-- Messages will appear here -->
+                </div>
+                <form id="message-form">
+                    <textarea id="message-content" name="message-content" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Loading and Error messages -->
+        <div id="loading-message" class="hidden">Loading...</div>
+        <div id="error-message" class="hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

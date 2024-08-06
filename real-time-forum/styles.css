@@ -1,0 +1,14 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#chat {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
