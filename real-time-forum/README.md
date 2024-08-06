@@ -40,8 +40,5 @@ Project Structure
 │   │   ├── chat.js
 │   │   └── utils.js
 │   ├── index.html
-│   └── tsconfig.json
-├── .gitignore
-├── README.md
-└── LICENSE
+    └── tsconfig.json
 ```
