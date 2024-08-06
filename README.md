@@ -47,14 +47,13 @@ This project is an upgraded forum application with real-time features, including
 
 ### Prerequisites
 
-- Go (1.18 or later)
+- Go 
 - SQLite
-- Node.js (for running a development server if needed)
 
 ### Steps
 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-repo/forum-application.git
-   cd forum-application
+   git clone https://github.com/Byqb/real-forum.git
+   cd real-forum
