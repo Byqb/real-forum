@@ -1,6 +1,6 @@
 Project Structure
 
-forum-application/
+```forum-application/
 ├── backend/
 │   ├── main.go
 │   ├── routes.go
@@ -44,3 +44,4 @@ forum-application/
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
