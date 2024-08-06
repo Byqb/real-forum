@@ -43,17 +43,76 @@ This project is an upgraded forum application with real-time features, including
   - **HTML**: Structures the web pages.
   - **CSS**: Styles the application.
 
-## Installation and Setup
-
 ### Prerequisites
 
 - Go 
 - SQLite
 
+## Serve the Frontend
+
+- The frontend is served by the backend application itself. Ensure that the backend is running, and it will handle serving the HTML, CSS, and JavaScript files.
+
+## Access the Application
+
+- Open your web browser and go to http://localhost:8080 (or the port specified in your backend configuration).
+
+## Usage
+- Register: Navigate to the registration page and fill out the required details.
+- Login: Use your credentials to log in.
+- Create Posts: Access the post creation form and submit posts.
+- Comment on Posts: View a post and add comments.
+- Send Private Messages: Use the chat interface to send and receive messages in real-time.
+
 ### Steps
 
 1. **Clone the Repository**
-
-   ```bash
+```bash
    git clone https://github.com/Byqb/real-forum.git
    cd real-forum
+```
+
+
+# Project Structure
+
+```forum-application/
+├── backend/
+│   ├── main.go
+│   ├── routes.go
+│   ├── handlers/
+│   │   ├── auth.go
+│   │   ├── posts.go
+│   │   ├── comments.go
+│   │   └── chat.go
+│   ├── models/
+│   │   ├── user.go
+│   │   ├── post.go
+│   │   ├── comment.go
+│   │   └── message.go
+│   ├── database/
+│   │   ├── db.go
+│   │   ├── migrations/
+│   │   │   ├── init.sql
+│   │   │   └── schema.sql
+│   ├── utils/
+│   │   └── auth.go
+│   └── go.mod
+|── frontend/
+    ├── src/
+    │   ├── index.ts
+    │   ├── auth.ts
+    │   ├── posts.ts
+    │   ├── comments.ts
+    │   ├── chat.ts
+    │   ├── utils.ts
+    │   └── styles/
+    │       └── styles.css
+    ├── dist/
+    │   ├── index.js
+    │   ├── auth.js
+    │   ├── posts.js
+    │   ├── comments.js
+    │   ├── chat.js
+    │   └── utils.js
+    ├── index.html
+    └── tsconfig.json
+```
